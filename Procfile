@@ -1,1 +1,1 @@
-web: gunicorn tugasperkuliahan.wsgi --log--file -
+web: gunicorn tugasperkuliahan.wsgi
