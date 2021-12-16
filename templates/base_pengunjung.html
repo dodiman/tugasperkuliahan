@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>
+	{% block title %}
+pengunjung
+{% endblock %}
+</title>
+</head>
+<body>
+{% block header %}
+<div>
+	Tugas Perkuliahan
+</div>
+
+<div>
+	<ul>
+		<li><a href="{% url 'pengunjung_index' %}">Home</a></li>
+		<li><a href="{% url 'pengunjung_adp' %}">Algoritma & Pemrogrman (C)</a></li>
+		<li><a href="{% url 'pengunjung_pcdd' %}">Pengolahan Citra Digital (D)</a></li>		
+		<li><a href="{% url 'pengunjung_pcde' %}">Pengolahan Citra Digital (E)</a></li>		
+	</ul>
+</div>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+
+</body>
+</html>

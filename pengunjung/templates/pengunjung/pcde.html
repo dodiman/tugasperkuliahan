@@ -1,0 +1,14 @@
+{% extends 'base_pengunjung.html'  %}
+
+{% block content %}
+Pengolahan Citra Digital (E)
+<form method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+	<input name="nama" type="text" placeholder="nama" /><br />
+	<input name="nim" type="text" placeholder="nim" /><br />
+	<input name="kelas" type="text" placeholder="kelas" /><br />
+	<input name="subjek" type="text" placeholder="subjek" /><br />
+	<input name="filenya" type="file" multiple />
+	<button type="submit">Oke</button>
+</form>
+{% endblock %}
