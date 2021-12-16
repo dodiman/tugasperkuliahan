@@ -1,0 +1,1 @@
+web: gunicorn tugasperkuliahan.wsgi --log--file -
